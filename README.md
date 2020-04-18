@@ -36,13 +36,19 @@
   - 创建 AdminUser 和 CommonUser 模型
   > 在 user-models.py 中添加 AdminUser 和 CommonUser class，并继承 `django.models.Model`  
   > 修改项目 *settings.py* 中 `DATABASES` 配置
-  > ```DATABASES = {
+  >   ``` python
+  >   DATABASES = {
   >      'default': {
   >           'ENGINE': 'django.db.backends.mysql',
   >           'NAME': 'zl_system',
   >           'USER': 'root',
   >           'PASSWORD': '123456',
-  >           'HOST': '122.112.180.208',
-  >           'PORT': '3360',
+  >           'HOST': '*.*.*.*', #数据库连接地址（ip）
+  >           'PORT': '3306',
   >      }
-  >    }```
+  >    } 
+  >    ```
+  > 在项目 *settings.py* 中的 `INSTALLED_APPS` 添加 `user.apps.UserConfig`
+  - 创建数据表：
+  > `python manage.py makemigrations user`  
+  > `python manage.py migrate user`
