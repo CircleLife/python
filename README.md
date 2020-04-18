@@ -37,12 +37,12 @@
   > 在 user-models.py 中添加 AdminUser 和 CommonUser class，并继承 `django.models.Model`  
   > 修改项目 *settings.py* 中 `DATABASES` 配置
   > ```DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'zl_system',
-        'USER': 'root',
-        'PASSWORD': '123456',
-        'HOST': '122.112.180.208',
-        'PORT': '3360',
-     }
-   }```
+  >      'default': {
+  >           'ENGINE': 'django.db.backends.mysql',
+  >           'NAME': 'zl_system',
+  >           'USER': 'root',
+  >           'PASSWORD': '123456',
+  >           'HOST': '122.112.180.208',
+  >           'PORT': '3360',
+  >      }
+  >    }```
