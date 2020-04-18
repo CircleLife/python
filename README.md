@@ -2,7 +2,7 @@
 ## django demo（图书管理网站）
 前期准备：安装 python3.7， pyCharm， mysql
 需求分析：
-|实体|功能|描述|
+|<div style="width: 200pt">实体</div>|功能<div style="width:200"/> |描述|
 |:---|:---|:---|
 |管理员用户|管理用户|包括增删改查|
 |          |管理图书|包括增删改查|
